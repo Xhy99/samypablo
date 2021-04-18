@@ -1,0 +1,45 @@
+.crashgame {
+  background-color: #6c757d;
+ float: left;
+  width: 650px;
+  height: 300px;
+  padding: 50px;
+  margin: 20px;
+
+}
+
+.join {
+  color: #FFFFFF;
+}
+
+body {
+
+  background-color: #404040;
+}
+
+
+#CrashLetra {
+  color: #FFFFFF
+}
+
+
+.loginbox {
+
+    background-color: #6c757d;
+   float: right;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+.resultsbox {
+
+  background-color: #6c757d;
+ float: center;
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+  margin: 20px;
+}
