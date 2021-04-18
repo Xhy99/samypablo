@@ -12,7 +12,19 @@
 
 <a href="index.php" ><img class="logoarriba" src="imagenes/logo.png"alt=""></a><b class="blogo">Dumped Bit</b>
 <div class="navbar">
-<a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>
+  <?php
+  if(!isset($_SESSION['user_id'])){
+    echo '<a href="login.php"><i class="fa fa-fw fa-user"></i> Login</a>';
+  }
+  else{
+    echo '<a>Hello ';
+    echo $_SESSION['username'];
+    echo ' Balance = ';
+    echo $_SESSION['balance'];
+    echo '</a>';
+  }
+  ?>
+
 
 </div>
 </nav>

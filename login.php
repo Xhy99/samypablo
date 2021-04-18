@@ -13,13 +13,17 @@ if (isset($_POST['login'])) {
     $query->execute();
 
     $result = $query->fetch(PDO::FETCH_ASSOC);
-
+    $balance = $result['Balance'];
+    ///$wallet = $result['wallet'];
     if (!$result) {
         echo '<p class="error">Username password combination is wrong!</p>';
     } else {
         if (password_verify($password, $result['password'])) {
             $_SESSION['user_id'] = $result['id'];
             echo '<p class="success">Hello back </p>';
+            $_SESSION["username"]= $username;
+            $_SESSION["balance"]= $balance;
+            ///$_SESSION["wallet"]= $wallet;
         } else {
             echo '<p class="error">Username password combination is wrong!</p>';
         }
