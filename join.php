@@ -1,5 +1,6 @@
 <?php
 include('reg.php');
+include('header.php')
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -27,7 +28,7 @@ include('reg.php');
     </div>
     <div class="container_login_register">
 
-      <form id="formuu_log"class="formu_login" method="post" action="" name="signin-form">
+      <form id="formuu_log"class="formu_login" method="post" action="login.php" name="signin-form">
         <h2> Sign in</h2>
         <input type="text" placeholder="Username" name="username">
           <input type="password" placeholder="Password" name="password">

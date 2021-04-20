@@ -1,6 +1,15 @@
 
 
-var yournumber = prompt("Introduce el numerito")
+var yournumber;
+do{
+  yournumber = prompt("Introduce el numerito"||typeof yournumber=="string");
+  if(yournumber<=0|| yournumber==null){
+    yournumber = prompt("El numero " +yournumber+ " no es válido introduzca otro");
+  }
+  else if(typeof yournumber == "string"){
+    yournumber = prompt("La palabra " + yournumber+ " no es válida introduzca un numero");
+  }
+}while(yournumber==null|| yournumber<=0);
 
 
 

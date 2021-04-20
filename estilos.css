@@ -33,10 +33,12 @@ position: relative;
 .caja_trasera {
   width: 100%;
   padding: 10px 20px;
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   backdrop-filter: blur(10px);
   background-color: #6c757d;
+  border-radius: 20px;
 
 }
 
@@ -77,7 +79,7 @@ position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 380px;
+  max-width: 50%;
   position: relative;
   top: -185px;
   left: 10px;

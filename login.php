@@ -3,6 +3,7 @@ session_start();
 
 include('config.php');
 
+
 if (isset($_POST['login'])) {
 
     $username = $_POST['username'];
@@ -29,7 +30,6 @@ if (isset($_POST['login'])) {
         }
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
       <br>
       <br>
 
-      <center>
+      <!--<center>
 
           <form method="post" action="" name="signin-form">
             <input type="text" placeholder="Username" name="username">
@@ -71,12 +71,13 @@ if (isset($_POST['login'])) {
 
           </form>
       <h1><b class="blogo">DumBit</b></h1>
-</center>
+</center>-->
 
   </div>
 
       <center>
   <h1 class="join"> Join The Game</h1>
+  <button class="join" onclick= "window.location.href='/play'"><h1 style= "color:black">Play!</h1></button>
 
 <p class="Bienvenida"> Welcome to the biggest crash game ever. </p>
 </form>
