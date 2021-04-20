@@ -13,7 +13,7 @@ if (isset($_POST['login'])) {
     $query->execute();
 
     $result = $query->fetch(PDO::FETCH_ASSOC);
-    $balance = $result['Balance'];
+    $balance = $result['balance'];
     ///$wallet = $result['wallet'];
     if (!$result) {
         echo '<p class="error">Username password combination is wrong!</p>';

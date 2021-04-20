@@ -1,6 +1,6 @@
 <?php
-define('USER', 'admin');
-define('PASSWORD', '123');
+define('USER', 'root');
+define('PASSWORD', '');
 define('HOST', 'localhost');
 define('DATABASE', 'dumbitdb');
 

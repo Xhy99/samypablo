@@ -10,6 +10,7 @@ session_start();
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="css/estilo.css" >
+      <link rel="stylesheet" type="text/css" href="estilos.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
 
@@ -20,7 +21,7 @@ session_start();
 </div>
   </nav>
 </div>
-    <div class="">
+    <div class="logoletra">
 
       <br>
       <br>
@@ -50,9 +51,8 @@ session_start();
   <h1 class="join"> Join The Game</h1>
 
 <p class="Bienvenida"> Welcome to the biggest crash game ever. </p>
-<form method="get" action="/register.php">
- <button class="buttonsignup" type="submit">Sign Up
-</form>
+<form method="get" action="/join.php">
+ <button class="buttonsignup">Join
 </div>
 <div class="footer">
   <footer></footer>
